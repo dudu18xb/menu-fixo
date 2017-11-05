@@ -1,14 +1,4 @@
-## menu-fixo 
-> Eduardo Rocha	
 
-* Adiciona na Div Pai do menu 
-```
- data-container="menu"
-
-```
-
-* No arquivo .js
-```
 $(document).ready(function (){
 	// variaveis locais
 	var _containerMenu = $('[data-container="menu"]');
@@ -21,16 +11,3 @@ $(document).ready(function (){
 		}
 	});
 });
-
-```
-
-* No arquivo .css
-```
-.menu-fixo{
-	z-index: 10;
-	position: fixed;
-	width: 100%;
-	top: 0;
-}
-
-```
