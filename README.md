@@ -12,8 +12,11 @@
 $(document).ready(function (){
 	// variaveis locais
 	var _containerMenu = $('[data-container="menu"]');
+ 	var alturacontent = $('html').height();
 
 	$(window).scroll(function(){
+		// if (($(this).scrollTop() > 186) && (alturacontent > 2116)) { **Exemplo caso tenha o bug
+
 		if ($(this).scrollTop()> 70){
 			_containerMenu.addClass('menu-fixo');
 		} else{
@@ -32,5 +35,11 @@ $(document).ready(function (){
 	width: 100%;
 	top: 0;
 }
+
+```
+
+* Em alguns Monitores vai ter um bug, você verifica com quantos pixels está bulgando e realiza o ajuste
+```
+ var alturacontent = $('html').height();
 
 ```
